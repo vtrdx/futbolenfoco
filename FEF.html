@@ -934,8 +934,10 @@ function observeFI(){ document.querySelectorAll('.fi:not(.vis)').forEach(el=>fiO
 /* ── INTRO ── */
 setTimeout(()=>{
   document.getElementById('intro').classList.add('out');
-  setTimeout(()=>{ document.getElementById('intro').style.display='none'; renderHome(); },750);
-},2100);
+  setTimeout(() => {
+    document.getElementById('intro-overlay').style.display = 'none';
+  }, 700);
+}, 2200);
 
 /* ════════════════════════════════════
    RENDER HELPERS
