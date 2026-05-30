@@ -43,19 +43,6 @@ textarea,input,select{font-family:var(--fb)}
 ::-webkit-scrollbar-thumb{background:var(--red);border-radius:2px}
 
 /* ════════════════════════════════════════
-   INTRO SPLASH
-════════════════════════════════════════ */
-#intro{position:fixed;inset:0;background:var(--black);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;transition:opacity .7s ease}
-#intro.out{opacity:0;pointer-events:none}
-.i-logo{font-family:var(--fd);font-size:clamp(38px,7vw,68px);font-weight:900;text-transform:uppercase;opacity:0;transform:scale(.75);animation:iz .8s cubic-bezier(.16,1,.3,1) .2s forwards}
-@keyframes iz{to{opacity:1;transform:scale(1)}}
-.i-logo span{color:var(--red)}
-.i-bar{width:0;height:3px;background:var(--red);border-radius:2px;animation:ib 1s ease .65s forwards}
-@keyframes ib{to{width:200px}}
-.i-sub{font-family:var(--fa);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gray);opacity:0;animation:io .5s ease 1.1s forwards}
-@keyframes io{to{opacity:1}}
-
-/* ════════════════════════════════════════
    BREAKING BAR
 ════════════════════════════════════════ */
 #breaking{background:var(--red);height:34px;display:flex;align-items:center;overflow:hidden;z-index:200;position:relative}
@@ -415,23 +402,6 @@ footer{background:var(--d1);border-top:1px solid var(--d3);padding:42px 20px 20p
 </style>
 </head>
 <body>
-
-<!-- INTRO SPLASH -->
-<div id="intro">
-  <div class="i-logo">Fútbol <span>en</span> Foco</div>
-  <div class="i-bar"></div>
-  <div class="i-sub">Sigamos poniendo al fútbol en foco</div>
-</div>
-
-<!-- BREAKING NEWS BAR -->
-<div id="breaking">
-  <div class="brk-lbl"><span class="brk-dot"></span>ÚLTIMA HORA</div>
-  <div class="brk-track">
-    <div class="brk-ticker" id="ticker-inner">
-      <!-- populated by JS -->
-    </div>
-  </div>
-</div>
 
 <!-- NAVBAR -->
 <header>
