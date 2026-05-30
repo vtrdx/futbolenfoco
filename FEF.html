@@ -933,7 +933,7 @@ function observeFI(){ document.querySelectorAll('.fi:not(.vis)').forEach(el=>fiO
 
 /* ── INTRO ── */
 setTimeout(()=>{
-  document.getElementById('intro').classList.add('out');
+  document.getElementById('intro-overlay').classList.add('hide');
   setTimeout(() => {
     document.getElementById('intro-overlay').style.display = 'none';
   }, 700);
