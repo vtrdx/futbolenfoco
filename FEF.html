@@ -931,13 +931,6 @@ const fiObserver = new IntersectionObserver(entries=>{
 },{threshold:0.07});
 function observeFI(){ document.querySelectorAll('.fi:not(.vis)').forEach(el=>fiObserver.observe(el)); }
 
-/* ── INTRO ── */
-setTimeout(()=>{
-  document.getElementById('intro').classList.add('hide');
-  setTimeout(() => {
-    document.getElementById('intro').style.display = 'none';
-  }, 700);
-}, 2200);
 
 /* ════════════════════════════════════
    RENDER HELPERS
